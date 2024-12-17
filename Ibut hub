@@ -1,0 +1,11 @@
+local player = game.Players.LocalPlayer
+local boat = player.PlayerGui.Boat
+local gameModule = require(game:GetService("ReplicatedStorage").GameModule)
+
+while true do
+    wait(0.1)
+    boat.UnlimitedBlocks.Value = true
+    boat.TurboBuild.Value = true
+    gameModule.ClientAddBlocks:FireServer(999999999)
+end
+```
